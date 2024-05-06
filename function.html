@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script>
+        //normal function
+    
+        /* function abc(){
+            return 'normal function'
+        }
+        document.write(abc())
+        
+        
+        //parameter function
+        function abc1(a,b,c,d,e){
+            return a+b+c+d+e
+        }
+        document.write(abc1(1,2,3,4,5)+ '<br>')
+
+        //default parameter function
+        function abc(a=0,b=0,c=0,d=0,e=0){
+            return a+b+c+d+e
+        }
+        document.write(abc()+ '<br>')
+        */
+
+        //local and global variable
+        var a=12
+        function abc(){
+            let a=10
+            document.write(a + '<br>')
+        }
+        abc()
+        document.write(a)
+    </script>
+</body>
+</html>
