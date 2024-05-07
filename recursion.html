@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursion</title>
+</head>
+<body>
+    <script>
+       /* function ab(n){
+            console.log(n)
+            n++
+            if (n<=20){
+                return ab(n)
+            }
+        }
+        ab(1)
+       */
+
+
+       function outer(i){
+        function inner(j){
+            console.log(i*j)
+            j++
+            if (j<=10){
+                return inner(j)
+            }
+        }
+       
+       inner(1)
+       i++
+       if(i<=10){
+        return outer(i)
+       }
+    }
+       outer(1)
+
+        
+      
+
+
+    
+    </script>
+</body>
+</html>
